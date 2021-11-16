@@ -130,8 +130,8 @@ section {
 .header-adr {
   display: flex;
   margin-left: auto;
-  min-width: 122 px;
-  height: 16 px;
+  min-width: 122px;
+  height: 16px;
 }
 
 .header-adr .adr-item:not(:last-child) {
