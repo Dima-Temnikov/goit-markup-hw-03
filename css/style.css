@@ -15,6 +15,8 @@
   --logo-color: #000000;
   --footer-logo-color: #ffffff;
   --port-btm-color: #f5f4fa;
+  --footer-frame-color: #ececec;
+  --portfolio-border-color: #eeeeee;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -55,7 +57,7 @@ h3 {
 section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato;*/
 }
 
 .container {
@@ -64,13 +66,15 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid rgb(16, 92, 179);
+  /*outline: 2px solid rgb(16, 92, 179);*/
 }
-.
 
 /*-----------------------HEADER--------------------*/
 .header {
   background-color: var(--header-background-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--footer-frame-color);
 }
 
 .header-nav {
@@ -92,7 +96,7 @@ section {
   display: block;
   width: 145px;
   height: 31px;
-  outline: solid 1px tomato;
+  /* outline: solid 1px tomato;*/
 }
 
 .header-list {
@@ -105,7 +109,7 @@ section {
 }
 
 .header-list .header-item {
-  outline: solid 1px tomato;
+  /* outline: solid 1px tomato;*/
 }
 
 .header-link {
@@ -135,7 +139,7 @@ section {
 }
 
 .header-adr .adr-item {
-  outline: solid 1px tomato;
+  /*outline: solid 1px tomato;*/
 }
 
 .header-mail,
@@ -172,7 +176,7 @@ section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  outline: solid 1px tomato;
+  /*outline: solid 1px tomato;*/
 }
 .hero-btn {
   /*----button-text-style----*/
@@ -210,7 +214,7 @@ section {
 .about-item {
   display: block;
   width: 270px;
-  outline: solid 1px tomato;
+  /*outline: solid 1px tomato;*/
 }
 .about-list .about-item:not(:last-child) {
   margin-right: 30px;
@@ -285,7 +289,7 @@ section {
 }
 .team-item {
   display: block;
-  outline: solid 1px tomato;
+  /*outline: solid 1px tomato;*/
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -330,13 +334,13 @@ section {
   width: 145px;
   height: 31px;
   margin-bottom: 20px;
-  outline: solid 1px tomato;
+  /*outline: solid 1px tomato;*/
 }
 
 .address-list {
   display: block;
   width: 231px;
-  outline: solid 1px tomato;
+  /*outline: solid 1px tomato;*/
 }
 
 .footer-adr-ph {
@@ -373,6 +377,11 @@ section {
 }
 
 /*-----------------------PORTFOLIO--------------------*/
+.port-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
 .port-button {
   font-family: inherit;
   font-style: normal;
@@ -407,7 +416,7 @@ section {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  outline: solid 1px tomato;
+  outline: solid 1px var(--portfolio-border-color);
 }
 
 .port-list-item:nth-child(3n) {
@@ -416,6 +425,13 @@ section {
 
 .port-list-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.no-gap {
+  display: block;
+}
+.port-block {
+  margin: 20px 24px;
 }
 
 .port-second-title {
