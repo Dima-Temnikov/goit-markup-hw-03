@@ -25,7 +25,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -55,9 +56,9 @@ h3 {
 }
 
 section {
-  padding-top: 94px;
+  /*padding-top: 94px;
+  outline: 2px solid tomato;*/
   padding-bottom: 94px;
-  /* outline: 2px solid tomato;*/
 }
 
 .container {
@@ -108,9 +109,9 @@ section {
   margin-right: 50px;
 }
 
-.header-list .header-item {
-  /* outline: solid 1px tomato;*/
-}
+/*.header-item {
+  outline: solid 1px tomato;
+}*/
 
 .header-link {
   display: block;
@@ -130,17 +131,15 @@ section {
 .header-adr {
   display: flex;
   margin-left: auto;
-  min-width: 122px;
-  height: 16px;
 }
 
 .header-adr .adr-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-adr .adr-item {
-  /*outline: solid 1px tomato;*/
-}
+/*.adr-item {
+  outline: solid 1px tomato;
+}*/
 
 .header-mail,
 .header-tel {
@@ -165,6 +164,8 @@ section {
 /*-----------------------HERO--------------------*/
 .hero {
   background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   display: block;
@@ -203,12 +204,13 @@ section {
 
 .about {
   display: flex;
+  padding-top: 94px;
 }
 
 .about-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px;*/
 }
 
 .about-item {
@@ -295,6 +297,11 @@ section {
   margin-right: 30px;
 }
 
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -304,6 +311,8 @@ section {
   color: var(--second-title-color);
 }
 .team-par {
+  margin-top: 10px;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -342,7 +351,9 @@ section {
   width: 231px;
   /*outline: solid 1px tomato;*/
 }
-
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-adr-ph {
   font-style: normal;
   font-weight: 400;
@@ -380,7 +391,10 @@ section {
 .port-btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+}
+.port-btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 .port-button {
   font-family: inherit;
@@ -431,7 +445,7 @@ section {
   display: block;
 }
 .port-block {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .port-second-title {
